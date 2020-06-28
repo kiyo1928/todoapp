@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  position: relative;
+  background-color: aquamarine;
+  color: white;
+  min-width: 800px;
+}
+h1{
+  margin: 0;
+}
+header h2{
+  margin: 0;
+  padding-top: 6px;
+  position: absolute;
+  top: 6px;
+  right: 25px;
+  border: 1px solid #66cdaa;
+  background-color: rgb(183, 235, 183);
+  border-radius: 25px;
+}
+.createToDo{
+  width: 800px;
+  margin: 0 auto;
+  height: 500px;
+  text-align: center;
+  background-color:  rgba(241, 195, 102, 0.979);
+  flex: 1;
+}
+textarea{
+  resize: none;
+  width: 580px;
+  height: 184px;
+  outline: none;
+}
+input[type = "submit"]{
+  width: 150px;
+  height: 80px;
+  font-size: 2rem;
+}
+footer{
+  background-color: #a9a9a9;
+  min-width: 800px;
+}
+small{
+  color: white;
+  float: right;
+}
