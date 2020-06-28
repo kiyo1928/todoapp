@@ -10,6 +10,7 @@ header{
   position: relative;
   background-color: aquamarine;
   color: white;
+  min-width: 800px;
 }
 h1{
   margin: 0;
@@ -36,18 +37,19 @@ p{
 main{
   flex: 1;
 }
+.button_area{
+  text-align: center;
+}
 button{
   margin-top: 30px;
   width: 200px;
   height: 50px;
 }
 .createdList{
-  padding-top: 60px;
-}
-.list_items{
-  display: flex;
-  position: relative;
-  
+  margin-top: 60px;
+  background-color: rgba(241, 195, 102, 0.979);
+  height: 330px;
+  overflow: scroll;
 }
 .daytime{
   position: absolute;
@@ -58,10 +60,6 @@ button{
   position: absolute;
   left: 177px;
   border-bottom: 1px solid rgba(189, 185, 185, 0.747);
-}
-.concrete_items{
-  margin-top: 55px;
-  display: flex;
 }
 .concrete_items p{
   padding-left: 12px;

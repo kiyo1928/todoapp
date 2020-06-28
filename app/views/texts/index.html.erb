@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
   <title>ToDoApp</title>
 </head>
 <body>
@@ -15,20 +15,17 @@
     <div class="ListTitle">
       <h1 class="list_title">Task List</h1>
       <p>今日1日のやることを書いてみよう</p>
-      <button>create task</button>
+      <div class="button_area">
+        <button>create task</button>  
+      </div>
     </div>
     <div class="createdList">
-    <% @texts.each do |text|%>
-      <div class="list_items">
-        <p class="daytime">date</p>
-        <p class="task">todo</p>
+      <% @texts.each do |text| %>
+      <form action="#">
+        <div><input type="checkbox" name="check"><%= text.text %></div>
+      </form>
+        <%end%>
       </div>
-      <div class="concrete_items">
-        <%# <%= text.created_at %> 
-        <%= text.text %>
-        <div class = "finish">完了</div>
-      </div>
-      <%end%>
     </div>
   </main>
   <footer>
