@@ -13,13 +13,19 @@
   </header>
   <div class="createToDo">
     <h2>今日やることを書いてみよう!!</h2>
-    <form>
-      <textarea name="todo" id="todo" cols="30" rows="10" ></textarea>
-    </form>
-    <input type="submit" value="送信">
+
+      <%= form_for(@texts) do |f| %>
+        <%= f.text_area :text, class: "textarea" %> 
+        <%= f.submit "投稿" %> 
+      <% end %>
   </div>
   <footer>
     <small>&copy; 2020 kiyo1928</small>
   </footer>
 </body>
 </html>
+
+<%= form_with model: @texts do |form| %>
+  <%= form.text_area :text %>
+  <%= form submit "送信" %>
+  <% end %>

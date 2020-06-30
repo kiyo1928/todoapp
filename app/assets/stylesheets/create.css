@@ -25,28 +25,22 @@ header h2{
   background-color: rgb(183, 235, 183);
   border-radius: 25px;
 }
-.createToDo{
+.doneSubmit{
+  flex:1;
   width: 800px;
   margin: 0 auto;
-  height: 500px;
   text-align: center;
-  background-color:  rgba(241, 195, 102, 0.979);
-  flex: 1;
-  position: relative;
+  padding-top: 120px;
 }
-.textarea{
-  resize: none;
-  width: 580px;
-  height: 184px;
-  outline: none;
+.submit_messsage{
+  border: 1px solid rgb(17, 178, 241);
 }
-input[type = "submit"]{
-  width: 150px;
-  height: 80px;
-  font-size: 2rem;
-  position: absolute;
-  left: 320px;
-  top: 320px;
+.return_top{
+  color: blue;
+  text-decoration: none;
+}
+.return_top:hover{
+  text-decoration: underline;
 }
 footer{
   background-color: #a9a9a9;
