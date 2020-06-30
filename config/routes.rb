@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "texts#index"
   get 'texts' => "texts#index"
   get 'texts/new' =>  "texts#new"
+  post 'texts' => "texts#create"
 end
