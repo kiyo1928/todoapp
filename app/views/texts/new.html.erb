@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="new.css">
-  <title>ToDo作成</title>
-</head>
 <body>
-  <header>
-    <h1>ToDo By Rails</h1>
-    <h2>ログイン</h2>
-  </header>
+  <%= render partial: 'layouts/header' %>
   <div class="createToDo">
     <h2>今日やることを書いてみよう!!</h2>
-
       <%= form_for(@texts) do |f| %>
         <%= f.text_area :text, class: "textarea" %> 
         <%= f.submit "投稿" %> 
       <% end %>
   </div>
-  <footer>
-    <small>&copy; 2020 kiyo1928</small>
-  </footer>
+  <%= render partial: 'layouts/footer' %>
 </body>
 </html>
 
