@@ -8,25 +8,26 @@ body{
 header{
   display: flex;
   position: relative;
-  background-color: aquamarine;
+  background-color: rgba(247, 149, 37, 0.945);
   color: white;
   min-width: 800px;
 }
 h1{
   margin: 0;
 }
-header h2{
+header h3{
   margin: 0;
   padding-top: 6px;
   position: absolute;
-  top: 6px;
+  top: 8px;
   right: 25px;
-  border: 1px solid #66cdaa;
-  background-color: rgb(183, 235, 183);
-  border-radius: 25px;
+  border:  solid black;
+  background-color: rgb(243, 180, 64);
+}
+header h3:hover{
+  text-decoration: underline;
 }
 main{
-  /* text-align: center; */
   margin: auto;
   width: 800px;
   padding-top: 39px;
@@ -43,7 +44,7 @@ main{
 }
 .button{
   background-color: beige;
-  border: 1px solid black;
+  border: solid black;
   padding: 10px;
   color: black;
   text-decoration: none
@@ -53,26 +54,27 @@ main{
   background-color: rgba(241, 195, 102, 0.979);
   height: 330px;
   overflow: scroll;
+  padding-left: 15px;
 }
-.daytime{
+form[name="input"]{
+  padding-top: 20px;
+  position: relative;
+  word-break: keep-all;
+}
+.show_text{
+  width: 600px;
+}
+.more_list{
   position: absolute;
-  left: 12px;
-  border-bottom: 1px solid rgba(189, 185, 185, 0.747);
+  right: 32px;
+  top: 18px;
+  border: solid black;
+  background-color: orange;
 }
-.task{
-  position: absolute;
-  left: 177px;
-  border-bottom: 1px solid rgba(189, 185, 185, 0.747);
-}
-.concrete_items p{
-  padding-left: 12px;
-}
-.finish{
-  background-color: rgb(143, 141, 141);
-  border: 1px solid black;
-  border-radius: 10px;
-  color: white;
-  margin-left: 20px;
+.delete_btn{
+  text-decoration: none;
+  color: black;
+  background-color: orange;
 }
 footer{
   background-color: #a9a9a9;

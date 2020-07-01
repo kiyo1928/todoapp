@@ -11,6 +11,12 @@ class TextsController < ApplicationController
      Text.create(text_params)
   end
 
+  def destroy
+    text = Text.find(params[:id])
+    text.destroy
+    redirect_to root_path
+  end
+
   private
   def text_params
     params.require(:text).permit(:text)
