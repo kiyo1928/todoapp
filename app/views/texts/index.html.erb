@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
   <title>ToDoApp</title>
 </head>
 <body>
@@ -21,12 +21,16 @@
     </div>
     <div class="createdList">
       <% @index.each do |text| %>
-      <form action="#" name="input">
-        <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
-        <div class="more_list">
-            <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
-        </div>
-      </form>
+        <div class="show_lists">
+          <div class="show_date">2020-07-02</div>
+          <div class="show_title">今日やること</div>
+          <form action="#" name="input">
+            <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
+            <div class="more_list">
+              <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
+            </div>
+          </form>
+        </div>  
         <%end%>
       </div>
     </div>
