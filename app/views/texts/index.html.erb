@@ -12,28 +12,38 @@
     <h3>sign in</h3>
   </header>
   <main>
-    <div class="ListTitle">
-      <h1 class="list_title">Task List</h1>
-      <p>今日1日のやることを書いてみよう</p>
-      <div class="button_area">
-          <%= link_to 'create task', 'texts/new', method: :get, class: "button" %>
-      </div>
-    </div>
-    <div class="createdList">
+    <nav class="side_menu">
       <% @index.each do |text| %>
-        <div class="show_lists">
-          <div class="show_date"><%= text.date %></div>
-          <div class="show_title"><%= text.title %></div>
-          <form action="#" name="input">
-            <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
-            <div class="more_list">
-              <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
-            </div>
-          </form>
-        </div>  
-        <%end%>
+      <ul>
+        <li><%= text.date %></li>
+        <label><%= text.title %></label>
+      </ul>
+      <%end%>
+    </nav>
+    <div class="main_menu">
+      <div class="ListTitle">
+        <h1 class="list_title">Task List</h1>
+        <p>今日1日のやることを書いてみよう</p>
+        <div class="button_area">
+            <%= link_to 'create task', 'texts/new', method: :get, class: "button" %>
+        </div>
       </div>
-    </div>
+      <div class="createdList">
+        <% @index.each do |text| %>
+          <div class="show_lists">
+            <div class="show_date"><%= text.date %></div>
+            <div class="show_title"><%= text.title %></div>
+            <form action="#" name="input">
+              <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
+              <div class="more_list">
+                <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
+              </div>
+            </form>
+          </div>  
+          <%end%>
+        </div>
+      </div>
+    </div>  
   </main>
   <footer>
     <small>&copy; 2020 kiyo1928</small>
