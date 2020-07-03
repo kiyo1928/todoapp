@@ -1,6 +1,6 @@
 class TextsController < ApplicationController
   def index
-    @index = Text.all
+    @index = Text.all.reverse
   end
 
   def new
@@ -19,7 +19,7 @@ class TextsController < ApplicationController
 
   private
   def text_params
-    params.require(:text).permit(:text)
+    params.require(:text).permit(:text,:date,:title)
   end
 end
 
