@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>ToDo By Rails</h1>
-    <h3>ログイン</h3>
+    <h3>sign in</h3>
   </header>
   <main>
     <div class="ListTitle">
@@ -22,8 +22,8 @@
     <div class="createdList">
       <% @index.each do |text| %>
         <div class="show_lists">
-          <div class="show_date">2020-07-02</div>
-          <div class="show_title">今日やること</div>
+          <div class="show_date"><%= text.date %></div>
+          <div class="show_title"><%= text.title %></div>
           <form action="#" name="input">
             <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
             <div class="more_list">
