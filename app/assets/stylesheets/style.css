@@ -10,7 +10,7 @@ header{
   position: relative;
   background-color: rgba(247, 149, 37, 0.945);
   color: white;
-  min-width: 800px;
+  min-width: 1000px;
 }
 h1{
   margin: 0;
@@ -29,12 +29,29 @@ header h3:hover{
 }
 main{
   margin: auto;
-  width: 800px;
+  /* width: 800px; */
   padding-top: 39px;
   flex: 1;
+  display: flex;
+  width: 1000px;
+  /* width: 100%; */
 }
 p{
   margin: 0;
+}
+.side_menu{
+  margin-right: 75px;
+  min-width: 170px;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.side_menu li{
+  margin-bottom: 5px;
+}
+.side_menu li:hover{
+  text-decoration: underline;
 }
 .ListTitle{
   position:relative;
@@ -106,6 +123,7 @@ form[name="input"]{
 }
 footer{
   background-color: #a9a9a9;
+  min-width: 1000px;
 }
 small{
   color: white;
