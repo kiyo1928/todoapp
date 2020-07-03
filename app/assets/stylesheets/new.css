@@ -33,11 +33,30 @@ header h3{
   flex: 1;
   position: relative;
 }
+.input_form{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+}
+.select_date{
+  width: 580px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.input_title{
+  width: 580px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
 .textarea{
   resize: none;
   width: 580px;
   height: 184px;
   outline: none;
+  margin: 0 auto;
 }
 input[type = "submit"]{
   width: 150px;
@@ -45,7 +64,7 @@ input[type = "submit"]{
   font-size: 2rem;
   position: absolute;
   left: 320px;
-  top: 320px;
+  top: 435px;
 }
 .more_list button{
   width: 100px;
