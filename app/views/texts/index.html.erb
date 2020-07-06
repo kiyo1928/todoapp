@@ -34,7 +34,7 @@
             <div class="show_date"><%= text.date %></div>
             <div class="show_title"><%= text.title %></div>
             <form action="#" name="input">
-              <div class="show_text"><input type="checkbox" name="check"><%= text.text %></div>
+              <div class="show_text"><%= text.text %></div>
               <div class="more_list">
                 <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
               </div>
