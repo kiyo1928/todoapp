@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'texts/new' =>  "texts#new"
   post 'texts' => "texts#create"
   delete 'texts/:id' => "texts#destroy"
+  get 'texts/:id/edit' => "texts#edit"
+  patch 'texts/:id' => "texts#update"
 end

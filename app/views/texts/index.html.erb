@@ -35,8 +35,11 @@
             <div class="show_title"><%= text.title %></div>
             <form action="#" name="input">
               <div class="show_text"><%= text.text %></div>
-              <div class="more_list">
+              <div class="delete_section">
                 <%= link_to 'delete', "/texts/#{text.id}", method: :delete, class: "delete_btn" %>
+              </div>
+              <div class="edit_section">
+                <%= link_to 'edit', "/texts/#{text.id}/edit", method: :get, class: "edit_btn" %>
               </div>
             </form>
           </div>  

@@ -1,17 +1,16 @@
+
 <body>
   <%= render partial: 'layouts/header' %>
   <div class="createToDo">
-    <h2>今日やることを書いてみよう!!</h2>
-      <%= form_for(@texts) do |f| %>
+    <h2>内容を編集しよう</h2>
+      <%= form_for(@texts, url: {controller: "texts", action: "update"} ) do |f| %>
       <div class="input_form">
         <%= f.datetime_field :date, class: "select_date" %>
         <%= f.text_field :title, class: "input_title", placeholder: "タイトルを入力してください" %>
         <%= f.text_area :text, class: "textarea", placeholder: "今日やることを入力して複数書くときには改行をしてください"  %>
-      </div> 
-        <%= f.submit "投稿" %> 
+      </div>
+      <%= f.submit "投稿" %>
       <% end %>
   </div>
   <%= render partial: 'layouts/footer' %>
 </body>
-
-
