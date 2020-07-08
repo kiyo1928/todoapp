@@ -21,6 +21,11 @@ class TextsController < ApplicationController
     @texts = Text.find(params[:id])
   end
 
+  def update
+    text = Text.find(params[:id])
+    text.update(text_params)
+  end
+
   private
   def text_params
     params.require(:text).permit(:text,:date,:title)
