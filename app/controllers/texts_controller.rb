@@ -17,6 +17,10 @@ class TextsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @texts = Text.find(params[:id])
+  end
+
   private
   def text_params
     params.require(:text).permit(:text,:date,:title)

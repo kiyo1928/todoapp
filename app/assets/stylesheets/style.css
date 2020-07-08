@@ -117,14 +117,30 @@ form[name="input"]{
   overflow: scroll;
   padding:5px;
 }
-.more_list{
+.delete_section{
   position: absolute;
   right: 10px;
   top: 265px;
   border: solid black;
   background-color: orange;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.edit_section{
+  position: absolute;
+  right: 110px;
+  top: 265px;
+  border: solid black;
+  background-color: orange;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .delete_btn{
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+}
+.edit_btn{
   text-decoration: none;
   color: black;
   background-color: orange;
